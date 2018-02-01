@@ -2,20 +2,122 @@
 ******  RESET + BASE STYLING  *******
 ************************************/
 
-* {}
+* {
+    padding: 0;
+    margin: 0;
+}
 
+body {
+    font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+}
+
+a {
+    color: seashell;
+    text-decoration: underline;
+}
+
+h2 {
+    padding: 10px;
+}
+
+h3 {
+    padding: 10px;
+}
+
+h4 {
+    padding: 10px
+}
 
 /************************************
 ******  HEADER  *********************
 ************************************/
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid seashell;
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    background-color: black;
+    height: 69px;
+}
+
+h1 img {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    height: 50px;
+}
+
+h1 {
+    height: 50px;
+}
+
+nav span {
+    padding: 0 15px;
+}
+
 /************************************
 ******  MISSION  ********************
 ************************************/
 
+.hero {
+    display: flex;
+    justify-content: center;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/img-mission-background.jpg);
+    margin-top: 70px;
+    width: 1200px;
+    height: 700px
+}
+
+.hero_text {
+    width: 1200px;
+    background-color: black;
+    align-items: center;
+    margin-top:
+}
+
 /************************************
 ******  TEA / MONTH  ****************
 ************************************/
+
+.month {
+    width: 1000px;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.tea {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.container {
+    margin: 0 10px
+}
+
+.container img {
+    width: 300px;
+    height: 200px;
+}
 
 /************************************
 ******  LOCATION  *******************
