@@ -22,15 +22,24 @@ a {
 }
 
 h2 {
-    padding: 10px;
+    margin: 12px 0 12px 0;
 }
 
 h3 {
-    padding: 10px;
+    margin: 12px 0 12px 0;
 }
 
 h4 {
-    padding: 10px
+    margin: 12px 0 12px 0;
+}
+
+address {
+    font-style: normal;
+}
+
+.shop a {
+    font-style: normal;
+    text-decoration: none
 }
 
 /************************************
@@ -59,6 +68,10 @@ h1 {
     height: 50px;
 }
 
+nav {
+    min-width: 400px;
+}
+
 nav span {
     display: inline;
     padding: 0 15px;
@@ -68,39 +81,46 @@ nav span {
 ******  MISSION  ********************
 ************************************/
 
-.hero {
+#hero {
     display: flex;
     justify-content: center;
+    /*    width: 1200px; */
+    margin: 0 auto;
 }
 
-.hero .background {
+#hero .background {
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url(../images/img-mission-background.jpg);
+    background-size: cover;
     margin-top: 70px;
-    width: 1200px;
+    flex-basis: 1200px;
     height: 700px
 }
 
 .hero_text {
-    width: 1200px;
+    max-width: 1200px;
+    flex-basis: 1200px;
     background-color: black;
     align-items: center;
-    margin-top:
 }
 
 /************************************
 ******  TEA / MONTH  ****************
 ************************************/
 
-.month {
+#month {
     width: 1000px;
-    height: 700px;
+    height: 750px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center
+    justify-content: center;
+}
+
+.tea_head {
+    margin-bottom: 10px
 }
 
 .tea {
@@ -111,8 +131,8 @@ nav span {
 
 }
 
-.tea .container {
-    margin: 0 10px
+.container {
+    margin: 0 15px 15px 15px
 }
 
 .container img {
@@ -124,9 +144,11 @@ nav span {
 ******  LOCATION  *******************
 ************************************/
 
-.location {
+#location {
     display: flex;
     justify-content: center;
+    width: 1200px;
+    margin: 0 auto
 }
 
 .background_location {
@@ -149,13 +171,19 @@ nav span {
     background-color: black;
     display: flex;
     flex-direction: column;
-    margin: 15px 40px;
+    margin: 15px 20px;
+    padding: 15px 0px;
     width: 300px;
     opacity: 1;
 }
 
-span {
+#location h3 {
+    margin-bottom: 25px 0;
+}
+
+#location span {
     display: block;
+    margin: 0 0 30px 0;
 }
 
 /************************************
@@ -170,10 +198,21 @@ footer {
 .contact {
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 200px;
+}
+
+.contact h2 {
+    margin-bottom: 30px;
+}
+
+.contact h5 {
+    margin: 25px;
 }
 
 .copyright {
     text-align: left;
+}
+
+h5 a {
+    text-decoration: none
 }

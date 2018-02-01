@@ -14,16 +14,16 @@
     <header>
         <h1><img src="resource/images/img-tea-cozy-logo.png" alt="Tea Cozy"></h1>
         <nav>
-            <span><a href="#">Mission</a></span>
-            <span><a href="#">Featured Tea</a></span>
-            <span><a href="#">Location</a></span>
+            <span><a href="#hero">Mission</a></span>
+            <span><a href="#month">Featured Tea</a></span>
+            <span><a href="#location">Location</a></span>
         </nav>
     </header>
     <!-- HEADER END     -->
 
 
     <!-- MISSION START     -->
-    <main class="hero">
+    <main id="hero">
         <div class="background">
             <div class="hero_text">
                 <h2>Our Mission</h2>
@@ -35,7 +35,7 @@
 
 
     <!--     TEA OF THE MONTH START   -->
-    <section class="month">
+    <section id="month">
         <div class="wrap">
             <div class="tea_head">
                 <h2>The of the Month</h2>
@@ -73,30 +73,33 @@
 
     <!--     LOCATIONS START     -->
 
-    <section class="location">
+    <section id="location">
         <div class="background_location">
             <h2>Locations</h2>
             <div class="shops">
-                <div class="shop">
+                <address class="shop"><a href="https://www.google.com/maps/place/The+Westin+Portland+Harborview/@43.6748576,-70.2645581,13.75z/data=!4m15!1m9!2m8!1sHotels!3m6!1sHotels!2s43.661471,+-70.2553259!3s0x4cb29c72aab0ee2d:0x7e9db6b53372fa29!4m2!1d-70.2553259!2d43.661471!3m4!1s0x4cb29c1150fe1919:0x604dfd1f1dbe0271!8m2!3d43.6548399!4d-70.2640378">
                     <h3>Downtown</h3>
                     <span>384 West 4th St</span>
                     <span>Suite 108</span>
                     <span>Portland, Maine</span>
-                </div>
+                </a>
+                </address>
 
-                <div class="shop">
+                <address class="shop"><a href="https://www.google.com/maps/place/Motel+6+Portland+Me/@43.6748576,-70.2645581,13.75z/data=!4m15!1m9!2m8!1sHotels!3m6!1sHotels!2s43.661471,+-70.2553259!3s0x4cb29c72aab0ee2d:0x7e9db6b53372fa29!4m2!1d-70.2553259!2d43.661471!3m4!1s0x4cb29a4c2754d36b:0x3f4716c0b58979cb!8m2!3d43.6772072!4d-70.3280988">
                     <h3>East Bayside</h3>
                     <span>3433 Phisherman's Avenue</span>
                     <span>(Northwest Corner)</span>
                     <span>Portland, Maine</span>
-                </div>
+                    </a>
+                </address>
 
-                <div class="shop">
+                <address class="shop"><a href="https://www.google.com/maps/search/Hotels/@43.6748576,-70.2645581,13.75z/data=!4m8!2m7!3m6!1sHotels!2s43.661471,+-70.2553259!3s0x4cb29c72aab0ee2d:0x7e9db6b53372fa29!4m2!1d-70.2553259!2d43.661471">
                     <h3>Oakdale</h3>
                     <span>515 Crescent Avenue</span>
                     <span>Second Floor</span>
                     <span>Portland, Maine</span>
-                </div>
+                    </a>
+                </address>
             </div>
         </div>
     </section>
@@ -105,14 +108,19 @@
     <!--     FOOTER START    -->
     <footer>
         <div class="contact">
-            <div class="contact_sum">
+            <address class="contact_sum">
                 <h2>The Tea Cozy</h2>
-                <h5>contact@theteacozy.com</h5>
-                <h5>917-555-8904</h5>
-            </div>
+                <h5><a href="mailto:contact@theteacozy.com">contact&#64;theteacozy.com</a></h5>
+                <h5><a href="tel:+12079175558904">917-555-8904</a></h5>
+            </address>
         </div>
         <div class="copyright">
-            <h5>copyright The Tea Cozy 2017</h5>
+            <h5>&copy; The Tea Cozy 2017
+                <script>
+                    new Date().getFullYear() > 2017 && document.write("-" + new Date().getFullYear());
+
+                </script>
+            </h5>
         </div>
     </footer>
 
