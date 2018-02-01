@@ -43,7 +43,7 @@ header {
     align-items: center;
     border-bottom: 1px solid seashell;
     position: fixed;
-    z-index: -1;
+    z-index: 10;
     width: 100%;
     background-color: black;
     height: 69px;
@@ -60,6 +60,7 @@ h1 {
 }
 
 nav span {
+    display: inline;
     padding: 0 15px;
 }
 
@@ -72,7 +73,7 @@ nav span {
     justify-content: center;
 }
 
-.background {
+.hero .background {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,7 +111,7 @@ nav span {
 
 }
 
-.container {
+.tea .container {
     margin: 0 10px
 }
 
@@ -123,6 +124,56 @@ nav span {
 ******  LOCATION  *******************
 ************************************/
 
+.location {
+    display: flex;
+    justify-content: center;
+}
+
+.background_location {
+    background-image: url(../images/img-locations-background.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 200px;
+    height: 500px;
+    width: 1200px;
+}
+
+.shops {
+    display: flex;
+
+}
+
+.shop {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 40px;
+    width: 300px;
+    opacity: 1;
+}
+
+span {
+    display: block;
+}
+
 /************************************
 ******  FOOTER  *********************
 ************************************/
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.copyright {
+    text-align: left;
+}
