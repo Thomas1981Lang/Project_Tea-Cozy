@@ -88,12 +88,11 @@ nav span {
 #hero .background {
     background-image: url(../images/img-mission-background.jpg);
     background-size: cover;
-
+    background-position: center;
     display: flex;
     align-items: center;
     flex-basis: 1200px;
     justify-content: center;
-
     height: 700px;
     margin-top: 70px;
 }
@@ -148,7 +147,7 @@ nav span {
 .background_location {
     background-image: url(../images/img-locations-background.jpg);
     background-size: cover;
-
+    background-position: right;
     display: flex;
     align-items: center;
     flex-basis: 1200px;
